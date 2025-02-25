@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Contrato</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.1.0/build/index.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #buttons {
+            padding: 2rem;
+        }
+
+        #exportPDF,
+        #exportDocx {
+            padding: 0.5rem;
+            font-weight: bold;
+            font-family: monospace, sans-serif, Arial, Helvetica;
+            cursor: pointer;
+        }
+
+        #contrato {
+            margin-top: 1rem;
+            width: 210mm;
+            min-height: 297mm;
+            background-color: white;
+            padding: 2.55cm;
+            box-shadow: 0 0 10px rgba(0, 0, 0);
+            border: 1px solid #ddd;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+        }
+
+        li {
+            padding: 0.5rem;
+        }
+
+        #grifar {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="buttons">
+            <button id="exportPDF">Exportar para PDF</button>
+            <button id="exportDocx">Exportar para DOCX</button>
+        </section>
+
+        <section id="contrato">
+            <h1>CONTRATO DE CESSÃO DE DIREITOS SOBRE IMÓVEL</h1>
+
+            <p><strong>Pelo presente instrumento particular, as partes abaixo identificadas:</strong></p>
+
+            <p>
+                <strong>CEDENTE:</strong>
+                <span id="grifar">
+                    <strong>
+                        [Nome completo do cedente], [qualificação completa], residente e domiciliado à [endereço completo], 
+                        portador(a) do CPF nº [número do CPF] e RG nº [número do RG].
+                    </strong>
+                </span>
+            </p>
+
+            <p>
+                <strong>CESSIONÁRIO:</strong>
+                <span id="grifar">
+                    <strong>
+                        [Nome completo do cessionário], [qualificação completa], residente e domiciliado à [endereço completo], 
+                        portador(a) do CPF nº [número do CPF] e RG nº [número do RG].
+                    </strong>
+                </span>
+            </p>
+
+            <p><strong>Têm entre si, de forma justa e contratada, o seguinte:</strong></p>
+
+            <h2>CLÁUSULA 1 - OBJETO DO CONTRATO</h2>
+            <p>
+                O CEDENTE cede e transfere ao CESSIONÁRIO todos os direitos sobre o imóvel localizado à 
+                <span id="grifar"><strong>[endereço completo do imóvel]</strong></span>, 
+                descrito na matrícula <span id="grifar"><strong>nº [número da matrícula]</strong></span>, 
+                do Cartório de Registro de Imóveis da <span id="grifar"><strong>[localidade do cartório]</strong></span>, 
+                que foi adquirido por meio do contrato de 
+                <span id="grifar"><strong>[especificar o tipo de contrato: compra e venda, promessa de compra e venda etc.]</strong></span>, 
+                conforme documentos anexos.
+            </p>
+            <p>
+                A cessão dos direitos refere-se à totalidade ou <span id="grifar"><strong>[parte]</strong></span> do imóvel, 
+                sendo o CESSIONÁRIO, a partir da assinatura deste contrato, 
+                detentor dos direitos de <span id="grifar"><strong>[especificar o direito cedido, como aquisição, posse, uso ou outros].</strong></span>
+            </p>
+
+            <h2>CLÁUSULA 2 - VALOR E FORMA DE PAGAMENTO</h2>
+            <p>
+                O valor acordado entre as partes para a cessão dos direitos sobre o imóvel é de 
+                <span id="grifar"><strong>R$ [valor acordado]</strong></span>, 
+                que será pago pelo CESSIONÁRIO ao CEDENTE da seguinte forma: 
+                <span id="grifar"><strong>[forma de pagamento, como à vista, parcelado etc.].</strong></span>
+            </p>
+            <p>
+                Em caso de parcelamento, o pagamento será feito da seguinte forma: 
+                <span id="grifar"><strong>[detalhamento das parcelas, datas de vencimento, juros etc.].</strong></span>
+            </p>
+
+            <h2>CLÁUSULA 3 - OBRIGAÇÕES DAS PARTES</h2>
+            <p>Obrigações do CEDENTE:</p>
+            <ul>
+                <li>
+                    O CEDENTE se compromete a transferir todos os direitos sobre o imóvel ao CESSIONÁRIO, 
+                    garantindo que o imóvel não possui ônus ou dívidas que possam comprometer a cessão. 
+                </li>
+                <li>
+                    O CEDENTE se compromete a fornecer ao CESSIONÁRIO toda a documentação necessária à regularização e formalização da cessão, 
+                    caso seja necessário.
+                </li>
+            </ul>
+            <p>Obrigações do CESSIONÁRIO:</p>
+            <ul>
+                <li>
+                    O CESSIONÁRIO se compromete a cumprir as obrigações assumidas no contrato originário, 
+                    como pagamento de parcelas, tributos ou outras responsabilidades associadas ao imóvel. 
+                </li>
+                <li>
+                    O CESSIONÁRIO se compromete a respeitar a finalidade para a qual os direitos foram cedidos e a devolução do imóvel, 
+                    caso seja o caso, nas condições previstas.
+                </li>
+            </ul>
+
+            <h2>CLÁUSULA 4 - PRAZO DE CESSÃO</h2>
+            <p>
+                O prazo de cessão é de <span id="grifar"><strong>[determinar o prazo, caso haja um]</strong></span>, 
+                iniciando-se na data da assinatura deste contrato e terminando em 
+                <span id="grifar"><strong>[data de término ou condição de término]</strong></span>.
+            </p>
+            <p>
+                A cessão pode ser rescindida antes do prazo, mediante acordo entre as partes, desde que formalizado por escrito.
+            </p>
+
+            <h2>CLÁUSULA 5 - GARANTIAS E RESPONSABILIDADES</h2>
+            <p>
+                O CEDENTE garante que o imóvel objeto deste contrato está livre de quaisquer ônus, gravames, ações judiciais ou dívidas, 
+                e que possui todos os documentos necessários para a cessão dos direitos.
+            </p>
+            <p>
+                O CEDENTE se compromete a resolver, no prazo de <span id="grifar"><strong>[prazo para resolver]</strong></span>, 
+                quaisquer pendências que possam surgir após a cessão, 
+                caso sejam relacionadas a atos ou omissões anteriores à assinatura deste contrato.
+            </p>
+
+            <h2>CLÁUSULA 6 - TRANSFERÊNCIA DE DOCUMENTOS</h2>
+            <p>
+                O CEDENTE compromete-se a entregar ao CESSIONÁRIO todos os documentos relacionados ao imóvel, 
+                como a escritura, o contrato de compra e venda, matrícula atualizada, 
+                e quaisquer outros documentos necessários à transferência dos direitos.
+            </p>
+
+            <h2>CLÁUSULA 7 - IMPOSIÇÃO DE CESSÃO A TERCEIROS</h2>
+            <p>
+                O CESSIONÁRIO não poderá ceder os direitos aqui transferidos a terceiros sem a prévia e expressa autorização do CEDENTE.
+            </p>
+
+            <h2>CLÁUSULA 08 - OBRIGAÇÕES TRIBUTÁRIAS</h2>
+            <p>
+                O CESSIONÁRIO será responsável pelo pagamento de todos os tributos, taxas, 
+                impostos e contribuições incidentes sobre o imóvel, a partir da data de cessão, 
+                incluindo, mas não se limitando a Imposto de Renda, IPTU (Imposto Predial e Territorial Urbano), 
+                taxas de conservação e outros encargos de natureza fiscal ou administrativa.
+            </p>
+            <p>
+                O CEDENTE se compromete a manter o pagamento de todos os tributos 
+                e encargos até a data da efetiva cessão e a regularizar eventuais pendências fiscais, 
+                caso existam, antes da assinatura deste contrato.
+            </p>
+            <p>
+                No caso de eventual débito tributário referente ao imóvel anterior à cessão, 
+                o CEDENTE será o responsável pelo seu pagamento, 
+                ficando o CESSIONÁRIO isento de qualquer responsabilidade sobre valores que tenham vencido antes da data de assinatura deste contrato.
+            </p>
+
+            <h2>CLÁUSULA 09 – FORO</h2>
+            <p>
+                Fica eleito o foro da comarca de <span id="grifar"><strong>[cidade e estado]</strong></span> 
+                para dirimir quaisquer dúvidas ou litígios oriundos deste contrato,
+                renunciando as partes a qualquer outro, por mais privilegiado que seja.
+            </p>
+
+            <h2>CLÁUSULA 10 - DISPOSIÇÕES GERAIS</h2>
+            <p>
+                Este contrato constitui o entendimento completo entre as partes, 
+                e só poderá ser alterado por escrito, com o consentimento de ambas as partes.
+            </p>
+            <p>
+                As partes declaram que leram e entenderam as cláusulas deste contrato e se obrigam a cumpri-las em sua totalidade.
+            </p>
+
+            <p style="margin-top: 10rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Local e Data</strong></p>
+            <p style="margin-top: 5rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Assinatura do Cedente</strong></p>
+            <p style="margin-top: 5rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Assinatura do Cessionário</strong></p>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('exportPDF').addEventListener("click", () => {
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF("p", "mm", "a4");
+
+                const margin = 25.5; 
+                let y = margin;      
+
+                const contrato = document.getElementById("contrato");
+                const pageWidth = pdf.internal.pageSize.getWidth() - 2 * margin;
+
+                pdf.setFont("times", "normal");
+
+                function processElement(element) {
+                    if (element.tagName === "H1") {
+                        pdf.setFontSize(14);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        let titleWidth = pdf.getTextWidth(title);
+                        pdf.text(title, (pageWidth - titleWidth) / 2 + margin, y);
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "H2") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitTitle, margin, y); 
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "P" || element.tagName === "LI") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+
+                        let text = element.innerText;
+                        let splitText = pdf.splitTextToSize(text, pageWidth);
+                        let textHeight = splitText.length * 6;
+
+                        if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitText, margin, y); 
+                        y += textHeight + 5;
+                    } else if (element.tagName === "UL") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+                        
+                        for (let li of element.children) {
+                            let bulletText = `• ${li.innerText}`;
+                            let splitBullet = pdf.splitTextToSize(bulletText, pageWidth);
+                            let textHeight = splitBullet.length * 6;
+
+                            if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                                pdf.addPage();
+                                y = margin;
+                            }
+
+                            pdf.text(splitBullet, margin, y);
+                            y += textHeight + 2;
+                        }
+                        return;
+                    }
+                }
+
+                for (let el of contrato.children) {
+                    processElement(el);
+                }
+
+                pdf.save("contrato.pdf");
+            });
+        });
+
+        document.getElementById("exportDocx").addEventListener("click", () => {
+            if (!window.docx) {
+                alert("A biblioteca docx ainda não carregou. Tente novamente.");
+                return;
+            }
+
+            const { Document, Packer, Paragraph, TextRun, AlignmentType, Numbering, LevelFormat } = window.docx;
+            const contrato = document.getElementById("contrato");
+
+            let children = [];
+            let listCounter = 1; 
+
+            contrato.childNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    let textRuns = [new TextRun({ text: node.innerText })];
+                    let paragraphProps = { spacing: { after: 200 } };
+
+                    if (node.tagName === "H1") {
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 28 })];
+                        paragraphProps.alignment = AlignmentType.CENTER;
+                    } else if (node.tagName === "H2") {
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 24 })];
+                        paragraphProps.alignment = AlignmentType.LEFT;
+                    } else if (node.tagName === "P") {
+                        textRuns = [new TextRun({ text: node.innerText, size: 24 })];
+                        paragraphProps.alignment = AlignmentType.JUSTIFIED;
+                    } else if (node.tagName === "UL") {
+                        Array.from(node.children).forEach((li) => {
+                            let listItemText = li.innerText;
+
+                            children.push(new Paragraph({
+                                children: [new TextRun({ text: listItemText, size: 24 })],
+                                bullet: { level: 0 }                            
+                            }));
+                        });
+
+                        return; 
+                    }
+                    children.push(new Paragraph({ children: textRuns, ...paragraphProps }));
+                }
+            });
+
+            const doc = new Document({
+                numbering: {
+                    config: [{
+                        reference: "numbered-list",
+                        levels: [{
+                            level: 0,
+                            format: LevelFormat.DECIMAL,
+                            text: "%1.",
+                            alignment: AlignmentType.LEFT,
+                        }]
+                    }]
+                },
+                sections: [{
+                    properties: {},
+                    children
+                }]
+            });
+
+            Packer.toBlob(doc).then(blob => {
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = "contrato.docx";
+                link.click();
+            });
+        });
+    </script>
+</body>
+
+</html>

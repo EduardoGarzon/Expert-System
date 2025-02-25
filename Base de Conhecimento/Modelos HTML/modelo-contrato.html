@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Contrato</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.1.0/build/index.min.js"></script>
+    
+    <!-- Estilizacao do contrato na página html equivalente ao modelo real do contrato. -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #buttons {
+            padding: 2rem;
+        }
+
+        #exportPDF,
+        #exportDocx {
+            padding: 0.5rem;
+            font-weight: bold;
+            font-family: monospace, sans-serif, Arial, Helvetica;
+            cursor: pointer;
+        }
+
+        #contrato {
+            margin-top: 1rem;
+            width: 210mm;
+            min-height: 297mm;
+            background-color: white;
+            padding: 2.55cm;
+            box-shadow: 0 0 10px rgba(0, 0, 0);
+            border: 1px solid #ddd;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+        }
+
+        li {
+            padding: 0.5rem;
+        }
+
+        #grifar {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- Botões para exportar o contrato em formato PDF ou DOCX. -->
+        <section id="buttons">
+            <button id="exportPDF">Exportar para PDF</button>
+            <button id="exportDocx">Exportar para DOCX</button>
+        </section>
+
+        <section id="contrato">
+            <!-- Conteúdo do contrato definido entre as tags h1, h2, p e ul(li). -->
+        </section>
+    </main>
+
+    <script>
+        // Gerador de PDF sobre o conteúdo HTML usando jsPDF.
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('exportPDF').addEventListener("click", () => {
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF("p", "mm", "a4"); // Orientacao Portrait (Retrato), Unidade em Milimetros, Formato A4.
+
+                const margin = 25.5; // Margem superior e lateral de 2,55cm (Equivale a margem normal no Word).
+                let y = margin;      // Coordenada onde o conteúdo comecara a ser escrito.
+
+                const contrato = document.getElementById("contrato");
+
+                // Calcula a largura utilizável da página subtraindo as margens laterais.
+                const pageWidth = pdf.internal.pageSize.getWidth() - 2 * margin;
+
+                pdf.setFont("times", "normal");
+
+                // Processa cada elemento dentro do HTML para convertê-lo corretamente para o PDF.
+                function processElement(element) {
+                    if (element.tagName === "H1") { // Elemento h1.
+                        pdf.setFontSize(14);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+
+                        // Divide o texto para caber na largura disponível.
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        // Altura do texto.
+                        let titleHeight = splitTitle.length * 6;
+
+                        // Se não houver espaço suficiente na página, cria uma nova página e reseta y.
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        let titleWidth = pdf.getTextWidth(title);
+                        
+                        // Centraliza o título e move y para a próxima linha.
+                        pdf.text(title, (pageWidth - titleWidth) / 2 + margin, y);
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "H2") { // Elemento h2.
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitTitle, margin, y);
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "P" || element.tagName === "LI") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+
+                        let text = element.innerText;
+                        // Divide o texto em várias linhas para caber no PDF.
+                        let splitText = pdf.splitTextToSize(text, pageWidth);
+                        let textHeight = splitText.length * 6;
+
+                        if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitText, margin, y);
+                        y += textHeight + 5;
+                    } else if (element.tagName === "UL") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+
+                        // Para listas não ordenadas (UL), percorre cada item (LI), adicionando um ponto "•" antes do texto.
+                        for (let li of element.children) {
+                            let bulletText = `• ${li.innerText}`;
+                            let splitBullet = pdf.splitTextToSize(bulletText, pageWidth);
+                            let textHeight = splitBullet.length * 6;
+
+                            // Se não houver espaço suficiente, adiciona uma nova página.
+                            if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                                pdf.addPage();
+                                y = margin;
+                            }
+
+                            pdf.text(splitBullet, margin, y);
+                            y += textHeight + 2;
+                        }
+                        return;
+                    }
+                }
+
+                // Percorre todos os elementos dentro de #contrato e os processa usando processElement().
+                for (let el of contrato.children) {
+                    processElement(el);
+                }
+
+                pdf.save("contrato.pdf");
+            });
+        });
+
+        // Gerador de DOCX sobre o conteúdo HTML.
+        document.getElementById("exportDocx").addEventListener("click", () => {
+            if (!window.docx) {
+                alert("A biblioteca docx ainda não carregou. Tente novamente.");
+                return;
+            }
+
+            const { Document, Packer, Paragraph, TextRun, AlignmentType, Numbering, LevelFormat } = window.docx;
+            const contrato = document.getElementById("contrato");
+
+            // Document                → Representa o documento DOCX.
+            // Packer                  → Converte o documento para Blob (formato de download).
+            // Paragraph               → Representa um parágrafo no documento.
+            // TextRun                 → Representa um trecho de texto dentro de um parágrafo.
+            // AlignmentType           → Define alinhamento do texto (esquerda, centralizado, justificado, etc.).
+            // Numbering e LevelFormat → Configuram listas numeradas.
+
+            // children    → Armazena os elementos do documento que serão adicionados ao DOCX.
+            // listCounter → Usado para numerar listas ordenadas.
+            let children = [];
+            let listCounter = 1;
+
+            // Percorre todos os elementos filhos do contrato.
+            // Verifica se o nó é um elemento HTML (ignorando espaços em branco e quebras de linha).
+            contrato.childNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    // textRuns       → Cria um bloco de texto básico com o conteúdo do elemento.
+                    // paragraphProps → Define um espaçamento padrão entre parágrafos (after: 200 = 20pt).
+                    let textRuns = [new TextRun({ text: node.innerText })];
+                    let paragraphProps = { spacing: { after: 200 } };
+
+                    if (node.tagName === "H1") { // Elemento h1.
+                        // Define o texto negrito e tamanho 28.
+                        // Centraliza o título.
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 28 })];
+                        paragraphProps.alignment = AlignmentType.CENTER;
+                    } else if (node.tagName === "H2") { // Elemento h2.
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 24 })];
+                        // Alinha à esquerda.
+                        paragraphProps.alignment = AlignmentType.LEFT;
+                    } else if (node.tagName === "P") { // Elemento p.
+                        textRuns = [new TextRun({ text: node.innerText, size: 24 })];
+                        // Justifica o texto.
+                        paragraphProps.alignment = AlignmentType.JUSTIFIED;
+                    } else if (node.tagName === "UL") { // Elemento ul.
+
+                        // Para cada item da lista (LI):
+                        // Cria um parágrafo com o texto do item.
+                        // Para lista (UL) adiciona usa marcadores (•).
+                        Array.from(node.children).forEach((li) => {
+                            let listItemText = li.innerText;
+
+                            children.push(new Paragraph({
+                                children: [new TextRun({ text: listItemText, size: 24 })],
+                                bullet: { level: 0 }
+                            }));
+                        });
+
+                        return;
+                    }
+
+                    // Adiciona o parágrafo processado à lista de elementos (children).
+                    children.push(new Paragraph({ children: textRuns, ...paragraphProps }));
+                }
+            });
+
+            // Configura numeração para as listas.
+            // Define os elementos processados (children) como o conteúdo do documento.
+            const doc = new Document({
+                numbering: {
+                    config: [{
+                        reference: "numbered-list",
+                        levels: [{
+                            level: 0,
+                            format: LevelFormat.DECIMAL,
+                            text: "%1.",
+                            alignment: AlignmentType.LEFT,
+                        }]
+                    }]
+                },
+                sections: [{
+                    properties: {},
+                    children
+                }]
+            });
+
+            // Packer.toBlob(doc) para converter o documento para Blob (formato que pode ser baixado).
+            // Cria um link invisível <a>, define o arquivo como "contrato.docx" e simula um clique para iniciar o download.
+            Packer.toBlob(doc).then(blob => {
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = "contrato.docx";
+                link.click();
+            });
+        });
+    </script>
+</body>
+
+</html>

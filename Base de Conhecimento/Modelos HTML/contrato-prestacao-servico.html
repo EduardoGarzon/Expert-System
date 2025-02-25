@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Contrato</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.1.0/build/index.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #buttons {
+            padding: 2rem;
+        }
+
+        #exportPDF,
+        #exportDocx {
+            padding: 0.5rem;
+            font-weight: bold;
+            font-family: monospace, sans-serif, Arial, Helvetica;
+            cursor: pointer;
+        }
+
+        #contrato {
+            margin-top: 1rem;
+            width: 210mm;
+            min-height: 297mm;
+            background-color: white;
+            padding: 2.55cm;
+            box-shadow: 0 0 10px rgba(0, 0, 0);
+            border: 1px solid #ddd;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+        }
+
+        li {
+            padding: 0.5rem;
+        }
+
+        #grifar {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="buttons">
+            <button id="exportPDF">Exportar para PDF</button>
+            <button id="exportDocx">Exportar para DOCX</button>
+        </section>
+
+        <section id="contrato">
+            <h1>CONTRATO DE PRESTAÇÃO DE SERVIÇOS</h1>
+
+            <p><strong>Pelo presente instrumento particular, as partes abaixo assinadas:</strong></p>
+
+            <p>
+                <strong>CONTRATANTE:</strong>
+                <span id="grifar">
+                    <strong>
+                        [Nome completo ou razão social], [Nacionalidade], [Estado civil], [Profissão],
+                        portador(a) do CPF/CNPJ nº [__________], residente e domiciliado(a) na [endereço completo].
+                    </strong>
+                </span>
+            </p>
+
+            <p>
+                <strong>CONTRATADO:</strong>
+                <span id="grifar">
+                    <strong>
+                        [Nome completo ou razão social], [Nacionalidade], [Estado civil], [Profissão],
+                        portador(a) do CPF/CNPJ nº [__________], residente e domiciliado(a) na [endereço completo].
+                    </strong>
+                </span>
+            </p>
+
+            <p>
+                <strong>
+                    Têm entre si, de maneira justa e contratada, 
+                    o presente contrato de prestação de serviços, que se regerá pelas cláusulas seguintes:
+                </strong>
+            </p>
+
+            <h2>CLÁUSULA 1 – OBJETO</h2>
+            <p>
+                O presente contrato tem como objeto a prestação de serviços de 
+                <span id="grifar"><strong>[descrição detalhada do serviço]</strong></span>, 
+                a serem executados pelo Contratado, conforme as condições estipuladas neste contrato.
+            </p>
+
+            <h2>CLÁUSULA 2 – PRAZO DE EXECUÇÃO</h2>
+            <p>
+                A prestação dos serviços terá início em <span id="grifar"><strong>[data de início]</strong></span> e término em 
+                <span id="grifar"><strong>[data de término]</strong></span>, 
+                salvo em caso de rescisão antecipada conforme o disposto neste contrato.
+            </p>
+
+            <h2>CLÁUSULA 3 – VALOR E FORMA DE PAGAMENTO</h2>
+            <p>
+                O valor total dos serviços será de <span id="grifar"><strong>R$ [valor]</strong></span>, 
+                a ser pago pelo Contratante ao Contratado da seguinte forma: 
+                <span id="grifar"><strong>[detalhamento da forma de pagamento - exemplo: em parcela única, em X parcelas etc.]</strong></span>, 
+                sendo o pagamento efetuado via <span id="grifar"><strong>[forma de pagamento, como transferência bancária, boleto etc.]</strong>.</span>
+            </p>
+
+            <h2>CLÁUSULA 4 – OBRIGAÇÕES DO CONTRATADO</h2>
+            <p>O Contratado se compromete a:</p>
+            <ul>
+                <li>Prestar os serviços de forma diligente e em conformidade com os padrões técnicos exigidos;</li>
+                <li>Cumprir os prazos estabelecidos para a execução dos serviços;</li>
+                <li>Fornecer relatórios de andamento quando solicitado pelo Contratante;</li>
+                <li>Garantir a confidencialidade das informações fornecidas pelo Contratante, exceto quando houver obrigação legal de divulgação.</li>
+            </ul>
+
+            <h2>CLÁUSULA 5 – OBRIGAÇÕES DO CONTRATANTE</h2>
+            <p>O Contratante se compromete a:</p>
+            <ul>
+                <li>Fornecer todas as informações e documentos necessários para a execução dos serviços;</li>
+                <li>Efetuar o pagamento conforme o acordado na cláusula 3;</li>
+                <li>Cooperar com o Contratado para garantir o andamento dos serviços de forma eficiente.</li>
+            </ul>
+            
+            <h2>CLÁUSULA 6 – RESCISÃO</h2>
+            <p>
+                O presente contrato poderá ser rescindido a qualquer tempo, por qualquer uma das partes, 
+                com <span id="grifar"><strong>[XX] dias</strong></span> de antecedência, mediante notificação por escrito. 
+                Caso haja rescisão sem justificativa válida, 
+                a parte infratora estará sujeita ao pagamento de multa rescisória no valor de 
+                <span id="grifar"><strong>[valor ou percentual acordado com base em uma média jurídica].</strong></span> 
+            </p>
+            
+            <h2>CLÁUSULA 7 – RESPONSABILIDADES</h2>
+            <p>
+                O Contratado não se responsabiliza por danos indiretos, 
+                lucros cessantes ou por eventuais prejuízos causados ao Contratante por fatores fora do seu controle, 
+                como casos de força maior ou problemas causados por terceiros.
+            </p>
+
+            <h2>CLÁUSULA 8 – CONFIDENCIALIDADE</h2>
+            <p>
+                As partes se obrigam a manter sigilo sobre todas as informações 
+                e documentos fornecidos durante a execução dos serviços, 
+                não podendo divulgá-los sem o consentimento prévio da outra parte, salvo por exigência legal.
+            </p>
+
+            <h2>CLÁUSULA 9 – PROPRIEDADE INTELECTUAL</h2>
+            <p>
+                Os direitos de propriedade intelectual sobre os produtos 
+                ou resultados gerados durante a execução dos serviços serão 
+                <span id="grifar"><strong>[detalhar se pertencem ao Contratante, ao Contratado ou se serão compartilhados].</strong></span>
+            </p>
+
+            <h2>CLÁUSULA 10 – FORO</h2>
+            <p>
+                Fica eleito o foro da comarca de <span id="grifar"><strong>[cidade e estado]</strong></span> 
+                para dirimir quaisquer dúvidas ou litígios oriundos deste contrato,
+                renunciando as partes a qualquer outro, por mais privilegiado que seja.
+            </p>
+
+            <p style="margin-top: 10rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Local e Data</strong></p>
+            <p style="margin-top: 5rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Assinatura do Contratado</strong></p>
+            <p style="margin-top: 5rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Assinatura do Contratante</strong></p>
+
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('exportPDF').addEventListener("click", () => {
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF("p", "mm", "a4");
+
+                const margin = 25.5; 
+                let y = margin;      
+
+                const contrato = document.getElementById("contrato");
+                const pageWidth = pdf.internal.pageSize.getWidth() - 2 * margin;
+
+                pdf.setFont("times", "normal");
+
+                function processElement(element) {
+                    if (element.tagName === "H1") {
+                        pdf.setFontSize(14);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        let titleWidth = pdf.getTextWidth(title);
+                        pdf.text(title, (pageWidth - titleWidth) / 2 + margin, y);
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "H2") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitTitle, margin, y); 
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "P" || element.tagName === "LI") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+
+                        let text = element.innerText;
+                        let splitText = pdf.splitTextToSize(text, pageWidth);
+                        let textHeight = splitText.length * 6;
+
+                        if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitText, margin, y); 
+                        y += textHeight + 5;
+                    } else if (element.tagName === "UL") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+                        
+                        for (let li of element.children) {
+                            let bulletText = `• ${li.innerText}`;
+                            let splitBullet = pdf.splitTextToSize(bulletText, pageWidth);
+                            let textHeight = splitBullet.length * 6;
+
+                            if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                                pdf.addPage();
+                                y = margin;
+                            }
+
+                            pdf.text(splitBullet, margin, y);
+                            y += textHeight + 2;
+                        }
+                        return;
+                    }
+                }
+
+                for (let el of contrato.children) {
+                    processElement(el);
+                }
+
+                pdf.save("contrato.pdf");
+            });
+        });
+
+        document.getElementById("exportDocx").addEventListener("click", () => {
+            if (!window.docx) {
+                alert("A biblioteca docx ainda não carregou. Tente novamente.");
+                return;
+            }
+
+            const { Document, Packer, Paragraph, TextRun, AlignmentType, Numbering, LevelFormat } = window.docx;
+            const contrato = document.getElementById("contrato");
+
+            let children = [];
+            let listCounter = 1; 
+
+            contrato.childNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    let textRuns = [new TextRun({ text: node.innerText })];
+                    let paragraphProps = { spacing: { after: 200 } };
+
+                    if (node.tagName === "H1") {
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 28 })];
+                        paragraphProps.alignment = AlignmentType.CENTER;
+                    } else if (node.tagName === "H2") {
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 24 })];
+                        paragraphProps.alignment = AlignmentType.LEFT;
+                    } else if (node.tagName === "P") {
+                        textRuns = [new TextRun({ text: node.innerText, size: 24 })];
+                        paragraphProps.alignment = AlignmentType.JUSTIFIED;
+                    } else if (node.tagName === "UL") {
+                        Array.from(node.children).forEach((li) => {
+                            let listItemText = li.innerText;
+
+                            children.push(new Paragraph({
+                                children: [new TextRun({ text: listItemText, size: 24 })],
+                                bullet: { level: 0 }
+                            }));
+                        });
+
+                        return; 
+                    }
+                    children.push(new Paragraph({ children: textRuns, ...paragraphProps }));
+                }
+            });
+
+            const doc = new Document({
+                numbering: {
+                    config: [{
+                        reference: "numbered-list",
+                        levels: [{
+                            level: 0,
+                            format: LevelFormat.DECIMAL,
+                            text: "%1.",
+                            alignment: AlignmentType.LEFT,
+                        }]
+                    }]
+                },
+                sections: [{
+                    properties: {},
+                    children
+                }]
+            });
+
+            Packer.toBlob(doc).then(blob => {
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = "contrato.docx";
+                link.click();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Contrato</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.1.0/build/index.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #buttons {
+            padding: 2rem;
+        }
+
+        #exportPDF,
+        #exportDocx {
+            padding: 0.5rem;
+            font-weight: bold;
+            font-family: monospace, sans-serif, Arial, Helvetica;
+            cursor: pointer;
+        }
+
+        #contrato {
+            margin-top: 1rem;
+            width: 210mm;
+            min-height: 297mm;
+            background-color: white;
+            padding: 2.55cm;
+            box-shadow: 0 0 10px rgba(0, 0, 0);
+            border: 1px solid #ddd;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            margin-left: 1rem;
+        }
+
+        li {
+            padding: 0.5rem;
+        }
+
+        #grifar {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="buttons">
+            <button id="exportPDF">Exportar para PDF</button>
+            <button id="exportDocx">Exportar para DOCX</button>
+        </section>
+
+        <section id="contrato">
+            <h1>CONTRATO DE PERMUTA DE IMÓVEL</h1>
+
+            <p>
+                <span id="grifar">
+                    <strong>
+                        [NOME COMPLETO DO PERMUTANTE 1], [qualificação completa], residente e domiciliado à [endereço completo], 
+                        doravante denominado PERMUTANTE 1.
+                    </strong>
+                </span>
+            </p>
+
+            <p>
+                <span id="grifar">
+                    <strong>
+                        [NOME COMPLETO DO PERMUTANTE 2], [qualificação completa], residente e domiciliado à [endereço completo],
+                        doravante denominado PERMUTANTE 2.
+                    </strong>
+                </span>
+            </p>
+
+            <p>
+                <strong>Têm entre si, justas e contratadas, as seguintes cláusulas e condições:</strong>
+            </p>
+
+            <h2>CLÁUSULA 1 - OBJETO DO CONTRATO</h2>
+            <p>As partes acordam em permutar entre si os imóveis descritos abaixo:</p>
+            <ul>
+                <li>
+                    <span id="grifar">
+                        <strong>
+                            Imóvel 1: [Descrição detalhada do imóvel];
+                        </strong>
+                    </span>
+                </li>
+                <li>
+                    <span id="grifar">
+                        <strong>
+                            Imóvel 2: [Descrição detalhada do imóvel].
+                        </strong>
+                    </span>
+                </li>
+            </ul>
+
+            <h2>CLÁUSULA 2 - VALOR DOS IMÓVEIS</h2>
+            <p>As partes reconhecem que os imóveis possuem os seguintes valores:</p>
+            <ul>
+                <li>
+                    <span id="grifar">
+                        <strong>
+                            Imóvel 1: R$ [valor do imóvel 1].
+                        </strong>
+                    </span>
+                </li>
+                <li>
+                    <span id="grifar">
+                        <strong>
+                            Imóvel 2: R$ [valor do imóvel 2].
+                        </strong>
+                    </span>
+                </li>
+            </ul>
+            <p>
+                A permuta será realizada pelo valor de mercado de ambos os imóveis, 
+                considerando os valores mencionados acima, salvo ajuste entre as partes.
+            </p>
+
+            <h2>CLÁUSULA 3 - COMPLEMENTO EM DINHEIRO (SE APLICÁVEL)</h2>
+            <p>
+                Caso um dos imóveis tenha valor superior ao outro, 
+                a parte que receber o imóvel de menor valor pagará à outra a diferença, 
+                no valor de <span id="grifar"><strong>R$ [valor da diferença]</strong></span>, 
+                em <span id="grifar"><strong>[número de parcelas]</strong></span>, 
+                com vencimento da primeira parcela em <span id="grifar"><strong>[data]</strong></span>, 
+                podendo ser paga por meio de <span id="grifar"><strong>[forma de pagamento acordada]</strong></span>.
+            </p>
+
+            <h2>CLÁUSULA 4 - OBRIGAÇÕES DAS PARTES</h2>
+            <p>As partes se obrigam a:</p>
+            <ul>
+                <li>Entregar os imóveis livres de qualquer ônus, gravame, dívida ou litígios;</li>
+                <li>
+                    Apresentar toda a documentação necessária para a formalização da permuta, 
+                    incluindo certidões negativas e escritura pública, se necessário;
+                </li>
+                <li>Cumprir as obrigações fiscais e tributárias relativas à permuta até a data da efetiva troca.</li>
+            </ul>
+
+            <h2>CLÁUSULA 5 - PRAZO PARA A ENTREGA DOS IMÓVEIS</h2>
+            <p>
+                As partes acordam que a entrega dos imóveis ocorrerá no prazo de 
+                <span id="grifar"><strong>[prazo em dias/meses]</strong></span>, 
+                contado a partir da assinatura deste contrato, salvo caso haja necessidade de prorrogação por acordo mútuo.
+            </p>
+
+            <h2>CLÁUSULA 6 - RESPONSABILIDADE POR DESPESAS E TRIBUTOS</h2>
+            <p>
+                As despesas relacionadas com a transferência de propriedade, 
+                incluindo ITBI (Imposto de Transmissão de Bens Imóveis), escritura pública, 
+                registros e outras taxas, serão de responsabilidade de [descrever].
+            </p>
+            <p>
+                Cada uma das partes será responsável pelo pagamento dos tributos 
+                incidentes sobre seus respectivos imóveis até a data da troca.
+            </p>
+
+            <h2>CLÁUSULA 7 - CONDIÇÕES DO IMÓVEL</h2>
+            <p>
+                As partes declaram que os imóveis estão em boas condições de uso e gozo, 
+                conforme vistoria realizada na data da assinatura deste contrato.
+            </p>
+            <p>
+                Caso uma das partes constate problemas estruturais ou outras condições que afetem o valor do imóvel após a assinatura, 
+                poderá exigir a reparação ou compensação da outra parte.
+            </p>
+
+            <h2>CLÁUSULA 8 - RESCISÃO E DESCUMPRIMENTO</h2>
+            <p>
+                O descumprimento de qualquer das cláusulas por uma das partes poderá ensejar a rescisão do contrato, 
+                sendo a parte inadimplente responsável por eventuais perdas e danos.
+            </p>
+            <p>
+                As partes podem rescindir este contrato de comum acordo, desde que formalizem a decisão por escrito.
+            </p>
+
+            <h2>CLÁUSULA 09 – FORO</h2>
+            <p>
+                Fica eleito o foro da comarca de <span id="grifar"><strong>[cidade e estado]</strong></span> 
+                para dirimir quaisquer dúvidas ou litígios oriundos deste contrato,
+                renunciando as partes a qualquer outro, por mais privilegiado que seja.
+            </p>
+
+            <h2>CLÁUSULA 10 - DISPOSIÇÕES GERAIS</h2>
+            <p>
+                Este contrato poderá ser alterado por meio de aditivo escrito, com a concordância de ambas as partes.
+            </p>
+            <p>
+                As partes declaram que leram e entenderam todas as cláusulas deste contrato, 
+                estando de pleno acordo com seus termos, 
+                e que assinam em dois exemplares de igual teor e forma, sendo um para cada parte.
+            </p>
+
+            <p style="margin-top: 10rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Local e Data</strong></p>
+            <p style="margin-top: 5rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Assinatura do Permutante 1</strong></p>
+            <p style="margin-top: 5rem; text-align: center;">__________________________________</p>
+            <p style="text-align: center;"><strong>Assinatura do Permutante 2</strong></p>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('exportPDF').addEventListener("click", () => {
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF("p", "mm", "a4");
+
+                const margin = 25.5; 
+                let y = margin;      
+
+                const contrato = document.getElementById("contrato");
+                const pageWidth = pdf.internal.pageSize.getWidth() - 2 * margin;
+
+                pdf.setFont("times", "normal");
+
+                function processElement(element) {
+                    if (element.tagName === "H1") {
+                        pdf.setFontSize(14);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        let titleWidth = pdf.getTextWidth(title);
+                        pdf.text(title, (pageWidth - titleWidth) / 2 + margin, y);
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "H2") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "bold");
+
+                        let title = element.innerText;
+                        let splitTitle = pdf.splitTextToSize(title, pageWidth);
+                        let titleHeight = splitTitle.length * 6;
+
+                        if (y + titleHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitTitle, margin, y); 
+                        y += titleHeight + 5;
+                    } else if (element.tagName === "P" || element.tagName === "LI") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+
+                        let text = element.innerText;
+                        let splitText = pdf.splitTextToSize(text, pageWidth);
+                        let textHeight = splitText.length * 6;
+
+                        if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                            pdf.addPage();
+                            y = margin;
+                        }
+
+                        pdf.text(splitText, margin, y); 
+                        y += textHeight + 5;
+                    } else if (element.tagName === "UL") {
+                        pdf.setFontSize(12);
+                        pdf.setFont("times", "normal");
+                        
+                        for (let li of element.children) {
+                            let bulletText = `• ${li.innerText}`;
+                            let splitBullet = pdf.splitTextToSize(bulletText, pageWidth);
+                            let textHeight = splitBullet.length * 6;
+
+                            if (y + textHeight > pdf.internal.pageSize.getHeight() - margin) {
+                                pdf.addPage();
+                                y = margin;
+                            }
+
+                            pdf.text(splitBullet, margin, y);
+                            y += textHeight + 2;
+                        }
+                        return;
+                    }
+                }
+
+                for (let el of contrato.children) {
+                    processElement(el);
+                }
+
+                pdf.save("contrato.pdf");
+            });
+        });
+
+        document.getElementById("exportDocx").addEventListener("click", () => {
+            if (!window.docx) {
+                alert("A biblioteca docx ainda não carregou. Tente novamente.");
+                return;
+            }
+
+            const { Document, Packer, Paragraph, TextRun, AlignmentType, Numbering, LevelFormat } = window.docx;
+            const contrato = document.getElementById("contrato");
+
+            let children = [];
+            let listCounter = 1; 
+
+            contrato.childNodes.forEach(node => {
+                if (node.nodeType === Node.ELEMENT_NODE) {
+                    let textRuns = [new TextRun({ text: node.innerText })];
+                    let paragraphProps = { spacing: { after: 200 } };
+
+                    if (node.tagName === "H1") {
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 28 })];
+                        paragraphProps.alignment = AlignmentType.CENTER;
+                    } else if (node.tagName === "H2") {
+                        textRuns = [new TextRun({ text: node.innerText, bold: true, size: 24 })];
+                        paragraphProps.alignment = AlignmentType.LEFT;
+                    } else if (node.tagName === "P") {
+                        textRuns = [new TextRun({ text: node.innerText, size: 24 })];
+                        paragraphProps.alignment = AlignmentType.JUSTIFIED;
+                    } else if (node.tagName === "UL") {
+                        Array.from(node.children).forEach((li) => {
+                            let listItemText = li.innerText;
+
+                            children.push(new Paragraph({
+                                children: [new TextRun({ text: listItemText, size: 24 })],
+                                bullet: { level: 0 }                            
+                            }));
+                        });
+
+                        return; 
+                    }
+                    children.push(new Paragraph({ children: textRuns, ...paragraphProps }));
+                }
+            });
+
+            const doc = new Document({
+                numbering: {
+                    config: [{
+                        reference: "numbered-list",
+                        levels: [{
+                            level: 0,
+                            format: LevelFormat.DECIMAL,
+                            text: "%1.",
+                            alignment: AlignmentType.LEFT,
+                        }]
+                    }]
+                },
+                sections: [{
+                    properties: {},
+                    children
+                }]
+            });
+
+            Packer.toBlob(doc).then(blob => {
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = "contrato.docx";
+                link.click();
+            });
+        });
+    </script>
+</body>
+
+</html>
