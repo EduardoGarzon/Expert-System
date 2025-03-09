@@ -1,0 +1,144 @@
+{
+    "clausulas": [
+        {
+            "id": "objeto-contrato",
+            "titulo": "CLÁUSULA [XX] – OBJETO DO CONTRATO",
+            "item1": "1.1 O presente contrato tem como objeto a transferência, cessão, utilização, permuta, aquisição ou prestação de serviços relacionados a <span id='grifar'><strong>[descrever o bem ou serviço, como imóvel, direitos ou atividade específica]</strong></span>, conforme as condições estabelecidas neste instrumento.",
+            "item2": "1.2 O objeto do contrato refere-se a <span id='grifar'><strong>[descrição detalhada do imóvel, serviço ou direito envolvido, incluindo endereço, matrícula, características ou especificações técnicas, se aplicável]</strong></span>, sendo destinado para <span id='grifar'><strong>[uso específico: residencial, comercial, industrial, prestação de serviços etc.]</strong></span>, conforme acordado entre as partes.",
+            "item3": "1.3 A utilização, transferência ou execução do objeto deste contrato deverá respeitar as normas vigentes e as cláusulas estabelecidas neste instrumento, sendo vedada qualquer alteração de destinação ou uso sem a anuência das partes envolvidas."
+        },
+        {
+            "id": "prazo",
+            "titulo": "CLÁUSULA [XX] – PRAZO",
+            "item1": "1.1 O presente contrato terá vigência pelo período de <span id='grifar'><strong>[determinar prazo: dias, meses ou anos]</strong></span>, com <span id='grifar'><strong>início em [data de início] e término em [data de término ou condição de término]</strong></span>, salvo disposição em contrário neste instrumento.",
+            "item2": "1.2 O prazo poderá ser <span id='grifar'><strong>[renovado/prorrogado/alterado]</strong></span> mediante acordo entre as partes, desde que formalizado por escrito.",
+            "item3": "1.3 Em casos específicos, como <span id='grifar'><strong>[exemplo: entrega de imóvel, prestação de serviços, cessão de direitos]</strong></span>, o prazo para cumprimento das obrigações estabelecidas será de <span id='grifar'><strong>[determinar prazo]</strong></span>, contado a partir de <span id='grifar'><strong>[evento ou assinatura do contrato]</strong></span>.",
+            "item4": "1.4 O contrato poderá ser rescindido antes do prazo estipulado, mediante <span id='grifar'><strong>[mútuo acordo/condições previstas neste contrato]</strong></span>, desde que formalizado por escrito."
+        },
+        {
+            "id": "valor-forma-pagamento",
+            "titulo": "CLÁUSULA X – VALOR E FORMA DE PAGAMENTO",
+            "item1": "1.1 O valor total acordado para a presente contratação é de <span id='grifar'><strong>R$[valor]</strong></span>, a ser pago pelo <span id='grifar'><strong>[Parte Pagadora] ao [Parte Recebedora]</strong></span> da seguinte forma: <span id='grifar'><strong>[detalhar a forma de pagamento: à vista, parcelado, periodicidade etc.]</strong></span>.",
+            "item2": "1.2 Caso o pagamento seja parcelado, este será realizado conforme o seguinte cronograma: <span id='grifar'><strong>[detalhamento das parcelas, datas de vencimento, juros aplicáveis, se houver]</strong></span>.",
+            "item3": "1.3 O pagamento será efetuado por meio de <span id='grifar'><strong>[forma de pagamento: transferência bancária, boleto, depósito, cheque etc.]</strong></span>, na conta bancária de titularidade do <span id='grifar'><strong>[Parte Recebedora]</strong></span>, cujos dados serão informados no momento da assinatura deste contrato.",
+            "item4": "1.4 Em caso de inadimplência, poderão ser aplicadas penalidades conforme estipulado neste contrato."
+        },  
+        {
+            "id": "recisao-contratual",
+            "titulo": "CLÁUSULA [XX] – RESCISÃO CONTRATUAL",
+            "item1": "1.1 O presente contrato poderá ser rescindido por qualquer uma das partes mediante <span id='grifar'><strong>notificação prévia por escrito com antecedência mínima de [X] dias</strong></span>, salvo disposição em contrário neste contrato.",
+            "item2": "O contrato também poderá ser rescindido de forma imediata nos seguintes casos:",
+            "li-1-item2": "Descumprimento de qualquer obrigação assumida por uma das partes, que gere prejuízo à outra parte;",
+            "li-2-item2": "<span id='grifar'><strong>[Especificar situações específicas, se necessário, como inadimplência, uso indevido do imóvel, não execução dos serviços etc.]</strong></span>;",
+            "li-3-item2": "Qualquer outra condição prevista em lei ou neste contrato.",
+            "item3": "1.3 Em caso de rescisão antecipada sem justa causa, a parte infratora poderá estar sujeita ao pagamento de uma multa correspondente a <span id='grifar'><strong>[valor ou percentual do contrato]</strong></span>, salvo se houver previsão diferente negociada entre as partes.",
+            "item4": "1.4 Caso a rescisão ocorra por culpa de uma das partes, a parte prejudicada poderá exigir <span id='grifar'><strong>[restituição de valores, indenização por perdas e danos, devolução do bem ou quaisquer outros direitos aplicáveis]</strong></span>, conforme o caso.",
+            "item5": "1.5 As partes poderão, de comum acordo, rescindir este contrato a qualquer tempo, desde que formalizem a decisão por escrito."
+        },
+        {
+            "id": "foro",
+            "titulo": "CLÁUSULA [XX] – FORO",
+            "item1": "1.1 As partes elegem o foro da comarca de <span id='grifar'><strong>[cidade e estado]</strong></span> para dirimir quaisquer questões ou litígios decorrentes deste contrato, renunciando a qualquer outro foro, por mais privilegiado que seja salvo disposição legal em contrário."
+        },
+        {
+            "id": "disposicoes-gerais",
+            "titulo": "CLÁUSULA [XX] – DISPOSIÇÕES GERAIS",
+            "item1": "1.1. Este contrato representa o entendimento integral entre as partes e substitui quaisquer acordos ou entendimentos anteriores, verbais ou escritos, sobre o objeto tratado.",
+            "item2": "1.2. Qualquer modificação ou aditivo a este contrato deverá ser feito por escrito e assinado por ambas as partes.",
+            "item3": "1.3. As partes declaram que leram e compreenderam todas as cláusulas deste contrato, obrigando-se a cumpri-las integralmente.",
+            "item4": "1.4. A celebração deste contrato não cria vínculo empregatício, societário, associativo ou de qualquer outra natureza entre as partes, salvo disposição expressa em contrário.",
+            "item5": "1.5. Este contrato é assinado <span id='grifar'><strong>em [número] vias de igual teor e forma</strong></span>, destinando-se uma cópia para cada parte."
+        },
+        {
+            "id": "garantias",
+            "titulo": "CLÁUSULA [XX] – GARANTIAS",
+            "item1": "1.1. A parte responsável <span id='grifar'><strong>[pela transferência, cessão, locação. Detalhar o objeto da responsabilidade.]</strong></span> do objeto deste contrato garante que este está livre de quaisquer ônus, gravames, ações judiciais ou pendências que possam afetar seu uso ou posse, salvo disposição expressa em contrário.",
+            "item2": "1.2. Caso sejam identificadas pendências ou irregularidades relacionadas a atos ou omissões anteriores à assinatura deste contrato, a parte responsável <span id='grifar'><strong>compromete-se a resolvê-las [no prazo de [X] dias]</strong></span>.",
+            "item3": "1.3. A parte beneficiária deste contrato terá o prazo de <span id='grifar'><strong>[X] dias para relatar</strong></span> qualquer vício, defeito oculto ou não conformidade que comprometa a finalidade acordada, cabendo à parte responsável tomar as medidas necessárias para regularização.",
+            "item4": "1.4. Se aplicável, as partes estabelecem que será fornecida garantia <span id='grifar'><strong>na modalidade de [caução, fiança, seguro fiança, garantia contratual ou outra]</strong></span>, no valor de <span id='grifar'><strong>R$[valor]</strong></span>, para assegurar o cumprimento das obrigações assumidas neste contrato."
+        },
+        {
+            "id": "direito-preferencia",
+            "titulo": "CLÁUSULA [XX] – DIREITO DE PREFERÊNCIA",
+            "item1": "1.1 As partes concordam que, caso uma das partes decida <span id='grifar'><strong>[alienar, transferir, ceder ou renegociar os direitos sobre o objeto deste contrato]</strong></span>, a outra parte terá direito de preferência para <span id='grifar'><strong>[aquisição ou continuidade da relação contratual]</strong></span>, desde que manifeste <span id='grifar'><strong>[interesse por escrito no prazo de XX dias]</strong></span> contados a partir da notificação formal.",
+            "item2": "1.2 Caso a parte beneficiária do direito de preferência não manifeste interesse dentro do prazo estipulado, a parte proponente <span id='grifar'><strong>[ficará livre para negociar com terceiros em condições não mais vantajosas do que as previamente ofertadas.]</strong></span>",
+            "item3": "1.3 O descumprimento desta cláusula sujeitará a parte infratora às penalidades previstas neste contrato, sem prejuízo do direito da parte prejudicada de buscar reparação por eventuais danos sofridos."
+        },
+        {
+            "id": "comunicacoes-notificacoes",
+            "titulo": "CLÁUSULA [XX] – COMUNICAÇÕES E NOTIFICAÇÕES",
+            "item1": "1.1 Todas as comunicações e notificações entre as partes deverão ser feitas <span id='grifar'><strong>[por escrito e enviadas para os endereços físicos ou eletrônicos]</strong></span> indicados neste contrato. As notificações serão consideradas recebidas na data do respectivo comprovante de entrega, quando <span id='grifar'><strong>[enviadas por meio de correspondência com aviso de recebimento (AR), ou na data da confirmação de leitura, quando enviadas por e-mail ou outro meio eletrônico previamente acordado.]</strong></span>",
+            "item2": "1.2 Qualquer alteração nos dados de contato das partes deverá ser informada <span id='grifar'><strong>[por escrito à outra parte]</strong></span>, sob pena de serem consideradas válidas as notificações enviadas aos endereços anteriormente fornecidos.",
+            "item3": "1.3 O descumprimento desta cláusula não exime a parte notificada de suas obrigações contratuais e poderá ensejar as penalidades previstas neste contrato."        
+        },
+        {
+            "id": "uso-terceiros",
+            "titulo": "CLÁUSULA [XX] – USO DE TERCEIROS PARA EXECUÇÃO DE OBRIGAÇÕES",
+            "item1": "1.1 As partes poderão contratar terceiros para a execução de determinadas obrigações previstas neste contrato, desde que previamente <span id='grifar'><strong>[autorizadas por escrito pela outra parte]</strong></span>, salvo disposição em contrário.",
+            "item2": "1.2 A parte que optar pela contratação de terceiros continuará integralmente responsável pelo cumprimento das obrigações assumidas neste contrato, respondendo por eventuais falhas, danos ou prejuízos causados em razão da atuação do terceiro contratado.",
+            "item3": "1.3 Fica vedada a contratação de terceiros para a execução das seguintes obrigações, salvo autorização expressa da outra parte: <span id='grifar'><strong>[listar as obrigações que não podem ser terceirizadas, se aplicável]</strong></span>.",
+            "item4": "1.4 Caso o terceiro contratado venha a descumprir qualquer cláusula deste contrato, a parte que o contratou deverá tomar as providências necessárias para corrigir a situação <span id='grifar'><strong>[no prazo de [XX] dias]</strong></span>, sob pena de aplicação das penalidades previstas neste contrato.",
+            "item5": "1.5 Se necessário, a parte contratante deverá fornecer à outra parte informações detalhadas sobre a identidade e qualificações do terceiro contratado, bem como comprovar a adequação da prestação de serviços ou execução da obrigação conforme os termos deste contrato."
+        },
+        {
+            "id": "forca-maior-caso-fortuito",
+            "titulo": "CLÁUSULA [XX] – FORÇA MAIOR E CASO FORTUITO",
+            "item1": "1.1 Nenhuma das partes será responsabilizada pelo descumprimento ou atraso no cumprimento das obrigações previstas neste contrato quando tal descumprimento ou atraso decorrer de eventos de força maior ou caso fortuito, conforme definido pelo <span id='grifar'><strong>[Código Civil Brasileiro/artigo aplicável]</strong></span>.",
+            "item2": "1.2 Consideram-se eventos de força maior ou caso fortuito, entre outros, <span id='grifar'><strong>[exemplos específicos, como desastres naturais, pandemias, greves, atos governamentais, falhas sistêmicas inesperadas etc.]</strong></span>, desde que estejam fora do controle da parte afetada e impossibilitem total ou parcialmente a execução das obrigações contratuais.",
+            "item3": "1.3 A parte afetada por um evento de força maior ou caso fortuito deverá notificar a outra parte por escrito <span id='grifar'><strong>[no prazo de [XX] dias]</strong></span> a partir do conhecimento do evento, informando sua extensão e as medidas adotadas para minimizar seus efeitos.",
+            "item4": "1.4 Caso a situação de força maior ou caso fortuito persista por um período <span id='grifar'><strong>[superior a [XX] dias]</strong></span>, as partes poderão renegociar os termos deste contrato ou, se inviável a continuidade da relação contratual, rescindi-lo sem aplicação de penalidades, salvo disposições específicas previstas neste contrato."
+        },
+        {
+            "id": "veracidade-informacoes",
+            "titulo": "CLÁUSULA [XX] – CONFIRMAÇÃO DE VERACIDADE DAS INFORMAÇÕES",
+            "item1": "1.1 As partes declaram que todas as informações, declarações e documentos fornecidos para a celebração e execução deste contrato são verdadeiros, completos e exatos, assumindo total responsabilidade por sua autenticidade.",
+            "item2": "1.2 Caso se comprove, a qualquer tempo, que alguma informação prestada foi falsa, incompleta ou enganosa, a parte responsável poderá ser penalizada conforme previsto neste contrato, sem prejuízo de eventuais sanções civis e criminais cabíveis.",
+            "item3": "1.3 Se a inexatidão das informações comprometer a execução do contrato ou causar prejuízo à outra parte, esta poderá exigir a correção imediata dos dados fornecidos <span id='grifar'><strong>[no prazo de [XX] dias]</strong></span>, ou, se aplicável, a rescisão do contrato sem prejuízo da reparação por perdas e danos.",
+            "item4": "1.4 Esta cláusula aplica-se a todas as informações fornecidas, incluindo, mas não se limitando a, <span id='grifar'><strong>[exemplos aplicáveis, como dados cadastrais, situação jurídica do imóvel, qualificações profissionais, capacidade financeira etc.]</strong></span>, sendo responsabilidade de cada parte manter seus dados sempre atualizados e informar eventuais alterações <span id='grifar'><strong>[dentro do prazo de [XX] dias]</strong></span>."
+        },
+        {
+            "id": "condicoes-uso-imovel",
+            "titulo": "CLÁUSULA [XX] – CONDIÇÕES DE USO DO IMÓVEL",
+            "item1": "1.1 A parte <span id='grifar'><strong>[LOCATÁRIA/COMODATÁRIA/CESSIONÁRIA/COMPRADORA]</strong></span> obriga-se a utilizar o imóvel objeto deste contrato exclusivamente para <span id='grifar'><strong>[FINALIDADE ESPECÍFICA: uso residencial, comercial, industrial etc.]</strong></span>, sendo vedada qualquer alteração de sua destinação sem a prévia e expressa autorização da parte <span id='grifar'><strong>[LOCADORA/COMODANTE/CEDENTE/VENDEDORA]</strong></span>.",
+            "item2": "1.2 É de responsabilidade da parte <span id='grifar'><strong>[LOCATÁRIA/COMODATÁRIA/CESSIONÁRIA/COMPRADORA]</strong></span> a conservação do imóvel, comprometendo-se a utilizá-lo com zelo e a não praticar qualquer ato que possa causar danos à estrutura, instalações ou áreas comuns, sob pena de arcar com os custos de reparação.",
+            "item3": "1.3 Fica expressamente proibido:",
+            "li-1-item3": "a) A realização de modificações estruturais ou reformas sem autorização prévia e por escrito da parte <span id='grifar'><strong>[LOCADORA/COMODANTE/CEDENTE/VENDEDORA]</strong></span>;",
+            "li-2-item3": "b) O uso do imóvel para atividades ilícitas ou que infrinjam normas municipais, estaduais ou federais;",
+            "li-3-item3": "c) O armazenamento de materiais inflamáveis, tóxicos ou perigosos que possam comprometer a segurança do imóvel ou de terceiros;",
+            "li-4-item3": "d) <span id='grifar'><strong>[OUTRAS RESTRIÇÕES ESPECÍFICAS, SE APLICÁVEL]</strong></span>.",
+            "item4": "1.4 O descumprimento das disposições desta cláusula poderá acarretar a rescisão imediata deste contrato, sem prejuízo da aplicação de penalidades previstas e da indenização por eventuais danos causados ao imóvel."
+        },
+        {
+            "id": "responsabilidade-danos",
+            "titulo": "CLÁUSULA [XX] – RESPONSABILIDADE POR DANOS",
+            "item1": "1.1 A parte <span id='grifar'><strong>[CONTRATANTE/LOCATÁRIA/COMODATÁRIA/CESSIONÁRIA/COMPRADORA]</strong></span> será responsável por qualquer dano causado ao <span id='grifar'><strong>[IMÓVEL/BEM/OBJETO]</strong></span>, decorrente de mau uso, negligência, imprudência ou qualquer ato praticado por si, seus prepostos, familiares, visitantes ou terceiros sob sua responsabilidade.",
+            "item2": "1.2 Caso seja constatado qualquer dano, a parte responsável deverá providenciar os reparos necessários <span id='grifar'><strong>[no prazo de [XX] dias]</strong></span>, restabelecendo o estado original do <span id='grifar'><strong>[IMÓVEL/BEM/OBJETO]</strong></span>, salvo desgaste natural decorrente do uso regular. Se não houver o cumprimento da obrigação no prazo estipulado, a parte <span id='grifar'><strong>[CONTRATANTE/LOCADORA/COMODANTE/CEDENTE/VENDEDORA]</strong></span> poderá realizar os reparos diretamente, cobrando os custos da parte responsável, acrescidos de eventuais encargos e penalidades previstas neste contrato.",
+            "item3": "1.3 Ficam excluídos da responsabilidade da parte <span id='grifar'><strong>[CONTRATANTE/LOCATÁRIA/COMODATÁRIA/CESSIONÁRIA/COMPRADORA]</strong></span> os danos resultantes de caso fortuito ou força maior, desde que devidamente comprovados.",
+            "item4": "1.4 O descumprimento desta cláusula poderá ensejar a rescisão do contrato, sem prejuízo da aplicação de outras penalidades cabíveis e da obrigação de indenizar eventuais prejuízos causados à outra parte."
+        },
+        {
+            "id": "renovacao-contratual",
+            "titulo": "CLÁUSULA [XX] – CONDIÇÕES PARA RENOVAÇÃO CONTRATUAL",
+            "item1": "1.1 O presente contrato poderá ser renovado por acordo entre as partes, mediante manifestação expressa por escrito, com <span id='grifar'><strong>[antecedência mínima de [XX] dias antes do término de sua vigência]</strong></span>. A renovação poderá ocorrer nas mesmas condições ora estabelecidas ou mediante ajuste de novas cláusulas e condições, conforme negociação entre as partes.",
+            "item2": "1.2 A renovação estará condicionada ao cumprimento integral das obrigações contratuais por ambas as partes, incluindo, mas não se limitando a, <span id='grifar'><strong>[pagamento em dia, manutenção do bem, cumprimento das obrigações legais etc.]</strong></span>.",
+            "item3": "1.3 Caso não haja manifestação expressa dentro do prazo estipulado, o contrato será considerado encerrado na data final de sua vigência, salvo disposição em contrário ou prorrogação automática prevista neste contrato.",
+            "item4": "1.4 Eventuais reajustes de valores, índices de correção, alterações de cláusulas ou novas condições para a renovação deverão ser formalizados por meio de <span id='grifar'><strong>[aditivo contratual/novo contrato]</strong></span>, assinado por ambas as partes."
+        },
+        {
+            "id": "sucessao-transferencia-direitos",
+            "titulo": "CLAUSULA [XX] – SUCESSÃO E TRANSFERÊNCIA DE DIREITOS",
+            "item1": "1.1 As partes concordam que os direitos e obrigações decorrentes deste contrato poderão ser transferidos, cedidos ou sucedidos a terceiros, total ou parcialmente, apenas com a prévia e expressa autorização da parte <span id='grifar'><strong>[cedente/transferente]</strong></span>. A transferência de direitos e obrigações, quando autorizada, será válida e eficaz apenas após a formalização por escrito e a comunicação das partes envolvidas.",
+            "item2": "1.2 Em caso de falecimento, incapacidade ou dissolução de qualquer uma das partes, <span id='grifar'><strong>[nome da parte]</strong></span>, os direitos e obrigações do presente contrato poderão ser transferidos para os sucessores legais, herdeiros ou representantes legais, desde que em conformidade com as disposições legais aplicáveis e com a anuência da parte <span id='grifar'><strong>[cedente/transferente]</strong></span> ou <span id='grifar'><strong>[nome da outra parte]</strong></span>.",
+            "item3": "1.3 A parte <span id='grifar'><strong>[cedente/transferente]</strong></span> obriga-se a informar à outra parte sobre qualquer intenção de ceder ou transferir seus direitos e obrigações, com <span id='grifar'><strong>[número de dias]</strong></span> de antecedência. A parte <span id='grifar'><strong>[destinatária da transferência]</strong></span> deverá concordar expressamente, por escrito, com os termos da cessão ou sucessão, no prazo de <span id='grifar'><strong>[número de dias]</strong></span> a contar da notificação."
+        },
+        {
+            "id": "tributos-fiscais",
+            "titulo": "CLAUSULA [XX] – OBRIGACOES TRIBUTÁRIAS E FISCAIS",
+            "item1": "1.1 As partes concordam que todas as obrigações tributárias e fiscais relativas ao presente contrato, incluindo, mas não se limitando a impostos, taxas, contribuições e demais encargos de natureza fiscal, serão de responsabilidade de <span id='grifar'><strong>[parte responsável]</strong></span>, conforme a legislação vigente.",
+            "item2": "1.2 A parte <span id='grifar'><strong>[responsável]</strong></span> compromete-se a efetuar o pagamento de todos os tributos e encargos fiscais, dentro dos prazos estabelecidos pelas autoridades competentes, e a entregar as respectivas declarações e documentos fiscais necessários à regularidade da operação, conforme os requisitos legais.",
+            "item3": "1.3 A parte <span id='grifar'><strong>[outra parte]</strong></span> se compromete a fornecer à parte <span id='grifar'><strong>[responsável]</strong></span> todos os documentos e informações necessários para o cumprimento das obrigações fiscais e tributárias, dentro do prazo de <span id='grifar'><strong>[número de dias]</strong></span>, a contar da solicitação da parte <span id='grifar'><strong>[responsável]</strong></span>.",
+            "item4": "1.4 Caso surjam quaisquer autuações, multas ou encargos fiscais resultantes do não cumprimento das obrigações tributárias de qualquer uma das partes, a parte responsável pelo inadimplemento será a única responsável pelo pagamento, isentando a outra parte de qualquer responsabilidade nesse sentido.",
+            "item5": "1.5 As partes concordam ainda que, em caso de modificações na legislação fiscal ou tributária aplicável ao objeto deste contrato, as partes deverão revisar e adaptar os termos do contrato, de modo a garantir a conformidade com as novas exigências legais."
+        }       
+    ]
+}

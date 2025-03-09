@@ -1,0 +1,13 @@
+{
+    "tipo-contrato": "comodato",
+    "coleta-informacao": "sim",
+    "veracidade-informacao": "sim",
+    "aviso-previo": "nao",
+    "confirmacao-legislacao": "sim",
+    "penalidade-prevista": "nao",
+    "exige-garantia": "sim",
+    "tipo-garantia": "sim",
+    "interesse-preferencia": "sim",
+    "meio-comunicacao": "sim"
+}
+
