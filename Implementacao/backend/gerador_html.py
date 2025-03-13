@@ -1,3 +1,8 @@
+# Luiz Eduardo Garzon
+# Pedro Henrique Berti
+# Kawan Oliveira
+# Weberson Leite
+
 import json
 from bs4 import BeautifulSoup
 

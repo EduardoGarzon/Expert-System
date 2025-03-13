@@ -1,3 +1,8 @@
+# Luiz Eduardo Garzon
+# Pedro Henrique Berti
+# Kawan Oliveira
+# Weberson Leite
+
 import sys
 sys.path.append('/home/eduardo/projetos/expert-system/backend/venv/lib/python3.8/site-packages/clipspy')
 

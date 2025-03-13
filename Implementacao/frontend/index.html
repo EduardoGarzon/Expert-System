@@ -1,3 +1,9 @@
+<!-- 
+ Luiz Eduardo Garzon
+ Pedro Henrique Berti
+ Kawan Oliveira
+ Weberson Leite 
+ -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -6,7 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Gerador de Contratos</title>
@@ -29,7 +36,8 @@
                 <option value="prestacao-servicos">Prestação de Serviço</option>
             </select>
 
-            <label>Há um bem (imóvel, serviço ou direito) específico sendo negociado? O usuário descreveu o bem/serviço/direito?</label>
+            <label>Há um bem (imóvel, serviço ou direito) específico sendo negociado? O usuário descreveu o
+                bem/serviço/direito?</label>
             <select name="objetivo-especifico">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
@@ -57,13 +65,14 @@
                 <option value="nao">Não</option>
             </select>
 
-            <label>Há previsão de multa ou penalidade pela infração e Descumprimento dos direitos aplicáveis negociados entre as partes?</label>
+            <label>Há previsão de multa ou penalidade pela infração e Descumprimento dos direitos aplicáveis negociados
+                entre as partes?</label>
             <select name="penalidade-prevista">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <label>É necessário a notificação sobre avisos prévios para situações específicas?</label>
             <select name="aviso-previo">
                 <option value="nao" disabled selected>Responder</option>
@@ -71,34 +80,37 @@
                 <option value="nao">Não</option>
             </select>
 
-            <label>Existe a necessidade sobre a identificação sobre a residência das partes e a região responsável por resoluções jurídicas e de eventuais disputas relacionadas ao contrato?</label>
+            <label>Existe a necessidade sobre a identificação sobre a residência das partes e a região responsável por
+                resoluções jurídicas e de eventuais disputas relacionadas ao contrato?</label>
             <select name="localizacao-partes">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>Existe a necessidade da inclusão de observações sobre a validade do contrato entre outras questões gerais?</label>
+
+            <label>Existe a necessidade da inclusão de observações sobre a validade do contrato entre outras questões
+                gerais?</label>
             <select name="observacoes-finais">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <label>As partes desejam incluir uma previsão de possibilidade de ajustes futuros ao contrato?</label>
             <select name="ajustes-futuros">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>Existe a necessidade de observações sobre a interpretação, prevalência de termos e legislação ou regulamentação específica aplicável ao contrato?</label>
+
+            <label>Existe a necessidade de observações sobre a interpretação, prevalência de termos e legislação ou
+                regulamentação específica aplicável ao contrato?</label>
             <select name="confirmacao-legislacao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <label>O contrato exige alguma garantia formal em relação a riscos relevantes de inadimplência?</label>
             <select name="exige-garantia">
                 <option value="nao" disabled selected>Responder</option>
@@ -113,20 +125,22 @@
                 <option value="nao">Não</option>
             </select>
 
-            <label>Existe a possibilidade do interesse de uma das partes em ter maior prioridade caso o bem seja negociado?</label>
+            <label>Existe a possibilidade do interesse de uma das partes em ter maior prioridade caso o bem seja
+                negociado?</label>
             <select name="interesse-preferencia">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>Existe a necessidade de estabelecer um meio de comunicação que será utilizado para notificações (e-mail, carta registrada, ambos)?</label>
+
+            <label>Existe a necessidade de estabelecer um meio de comunicação que será utilizado para notificações
+                (e-mail, carta registrada, ambos)?</label>
             <select name="meio-comunicacao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <label>A obrigação contratual exige mão de obra ou serviços de terceiros especializados?</label>
             <select name="natureza-objeto-especializada">
                 <option value="nao" disabled selected>Responder</option>
@@ -134,69 +148,77 @@
                 <option value="nao">Não</option>
             </select>
 
-            <label>Existe a possibilidade da aceitação que o contratado utilize terceiros para executar suas obrigações?</label>
+            <label>Existe a possibilidade da aceitação que o contratado utilize terceiros para executar suas
+                obrigações?</label>
             <select name="permite-subcontratacao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <label>A execução das obrigações é complexa ou envolve múltiplas etapas?</label>
             <select name="complexidade-execucao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>Existe a possibilidade que o objeto do contrato seja prejudicado devido a riscos de fatores externos (greves, crises, pandemias)?</label>
+
+            <label>Existe a possibilidade que o objeto do contrato seja prejudicado devido a riscos de fatores externos
+                (greves, crises, pandemias)?</label>
             <select name="riscos-externos">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>O contrato possui tempo de duração relevante envolvendo a execução de obrigações contínuas que são passiveis de alta formalidade e proteção jurídica?</label>
+
+            <label>O contrato possui tempo de duração relevante envolvendo a execução de obrigações contínuas que são
+                passiveis de alta formalidade e proteção jurídica?</label>
             <select name="duracao-contrato">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>O contrato necessita aborda a existência da coleta de informações relevantes como dados cadastrais ou documentais fornecidas pelas partes?</label>
+
+            <label>O contrato necessita aborda a existência da coleta de informações relevantes como dados cadastrais ou
+                documentais fornecidas pelas partes?</label>
             <select name="coleta-informacao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
 
-            <label>O contrato exige formalização jurídica robusta para validação de informações sobre todos os dados informados e suas dependências?</label>
+            <label>O contrato exige formalização jurídica robusta para validação de informações sobre todos os dados
+                informados e suas dependências?</label>
             <select name="veracidade-informacao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>O contrato deve prever a definição sobre a utilização sobre o objeto negociado além de associações e exigências especificas que devem ser respeitadas relacionadas ao uso do bem?</label>
+
+            <label>O contrato deve prever a definição sobre a utilização sobre o objeto negociado além de associações e
+                exigências especificas que devem ser respeitadas relacionadas ao uso do bem?</label>
             <select name="condicoes-uso">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>O contrato necessita determinar restrições e exigências sobre questões de utilização, ambientalismo, zoneamento e demais advertências especificas a respeito de continências sobre o objeto?</label>
+
+            <label>O contrato necessita determinar restrições e exigências sobre questões de utilização, ambientalismo,
+                zoneamento e demais advertências especificas a respeito de continências sobre o objeto?</label>
             <select name="restricoes-objeto">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>O contrato deve estabelecer as diretrizes sobre a responsabilidade das partes por eventuais danos sobre o objeto?</label>
+
+            <label>O contrato deve estabelecer as diretrizes sobre a responsabilidade das partes por eventuais danos
+                sobre o objeto?</label>
             <select name="compromissos-danos">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <label>Existe risco potencial de danos ao bem, imóvel ou serviço?</label>
             <select name="riscos-danos">
                 <option value="nao" disabled selected>Responder</option>
@@ -204,34 +226,38 @@
                 <option value="nao">Não</option>
             </select>
 
-            <label>O contrato necessita prever condições de prazo, execução contínua ou periódica e termos especiais para renovação?</label>
+            <label>O contrato necessita prever condições de prazo, execução contínua ou periódica e termos especiais
+                para renovação?</label>
             <select name="peridiocidade">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
-            <label>Existe a necessidade de definir obrigações e contenções sobre transferências de direitos e sucessão do objeto sobre as partes envolvidas?</label>
+
+            <label>Existe a necessidade de definir obrigações e contenções sobre transferências de direitos e sucessão
+                do objeto sobre as partes envolvidas?</label>
             <select name="transferencia-sucessao">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
 
-            <label>O contrato necessita definições formais sobre responsabilidades tributais das partes envolvidas relacionadas a natureza do objeto?</label>
+            <label>O contrato necessita definições formais sobre responsabilidades tributais das partes envolvidas
+                relacionadas a natureza do objeto?</label>
             <select name="obrigacoes-tributarias">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
 
-            <label>A natureza do contrato exige o englobamento de questões tributarias especificas a respeito de questões fiscais jurídicas?</label>
+            <label>A natureza do contrato exige o englobamento de questões tributarias especificas a respeito de
+                questões fiscais jurídicas?</label>
             <select name="natureza-juridica">
                 <option value="nao" disabled selected>Responder</option>
                 <option value="sim">Sim</option>
                 <option value="nao">Não</option>
             </select>
-            
+
             <button type="button" onclick="enviarFormulario()">Gerar Contrato</button>
             <!-- <button type="button" onclick="baixarJSON()">Baixar JSON</button> -->
         </form>

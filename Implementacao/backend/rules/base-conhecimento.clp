@@ -1,3 +1,8 @@
+; Luiz Eduardo Garzon
+; Pedro Henrique Berti
+; Kawan Oliveira
+; Weberson Leite
+
 ;Definindo estrutura para o contrato.
 ;Usando deftemplate para definir fatos com múltiplos campos.
 (deftemplate contrato

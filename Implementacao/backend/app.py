@@ -1,3 +1,8 @@
+# Luiz Eduardo Garzon
+# Pedro Henrique Berti
+# Kawan Oliveira
+# Weberson Leite
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from clips_engine.motor_clips import processar_contrato
