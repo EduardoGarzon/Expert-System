@@ -1,7 +1,6 @@
 ***
 This software was developed in backend and frontend.  
-The backend was implemented using a Python Flask API responsible for sending the responses from the frontend to the CLIPS inference engine,  
-through the clipspy library, and returning the modeled contract to the frontend.  
+The backend was implemented using a Python Flask API responsible for sending the responses from the frontend to the CLIPS inference engine, through the clipspy library, and returning the modeled contract to the frontend.  
 The frontend was developed using HTML, CSS and Javascript technologies.
 ***
 ![image](https://github.com/user-attachments/assets/f0106ae0-7fcf-4fa4-a42a-b6276c312761)
